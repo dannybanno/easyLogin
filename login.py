@@ -19,8 +19,10 @@ loginUsername = input('Enter Username: ')
 loginPassword = input('Enter Password: ')
 
 
-if loginUsername == 'danny':
-    if loginPassword == 'danny2':
-        print('Welcome ' + loginUsername)
-else:
-           print('Wrong info Try Again!')
+def login():
+           if loginUsername == 'danny':
+               if loginPassword == 'danny2':
+                   print('Welcome ' + loginUsername)
+           else:
+                      print('Wrong info Try Again!')
+                      return login
